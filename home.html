@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>http://www.levelsupinc.com</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(2.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 200vh;
+        }
+
+        .navbar{
+            width: 1200px;
+            height: 70px;
+            margin: auto;
+        }
+
+        .icon{
+            width: 200px;
+            float: left;
+            height: 70px;
+        }
+
+        .logo{
+            color: blueviolet;
+            font-size: 35px;
+            font-family: Arial;
+            padding-left: 1px;
+            float: left;
+            padding-top: 10px;
+            cursor: pointer;
+        }
+
+        .menu{
+            width: 900px;
+            float: left;
+            height: 70px;
+        }
+
+        ul{
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+        }
+
+        ul li{
+            list-style: none;
+            margin-left: 62px;
+            margin-top: 27px;
+            font-size: 14px;
+            display: inline-block;
+            position: relative;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-family:Arial ;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width: 100%;
+            background: #009688;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+
+        ul li a:hover{
+            color:blueviolet;
+        }
+
+        .btn{
+            width: 100%;
+            height: 40px;
+            background: blueviolet;
+            border: 2px solid blueviolet;
+            margin-top: 13px;
+            color: #fff;
+            font-size: 15px;
+            border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+        }
+
+        .btn:focus{
+            outline: none;
+        }
+
+        .content{
+            width: 1200px;
+            height: auto;
+            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+
+        @media only screen and (max-width: 414px ){
+            .content{
+                visibility: visible;
+            }
+        }
+
+        .content .par{
+            padding-left: 20px;
+            padding-bottom: 1px;
+            padding-top: 20px;
+            font-family: Arial;
+            letter-spacing: 1.2px;
+            line-height: 30px;
+        }
+
+        .content h1{
+            font-family: 'Times New Roman';
+            font-size: 50px;
+            padding-left: 20px;
+            padding-top: 5px;
+            margin-top: 0%;
+            letter-spacing: 2px;
+            color: #808080;
+        }
+
+        .cn{
+            width: 160px;
+            height: 40px;
+            background: #fff;
+            border: none;
+            margin-bottom: 50px;
+            margin-left: 20px;
+            font-size: bold;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: .4s ease;
+        }
+
+        .cn a{
+            text-decoration: none;
+            color: #000;
+            transition: 0.3 ease;
+        }
+
+        .cn:hover{
+            background-color: blueviolet;
+        }
+
+        .content span{
+            color: blueviolet;
+            font-size: 60px;
+        }
+
+        .icons a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .icons ion-icon{
+            color: #fff;
+            font-size: 30px;
+            padding-left: 14px;
+            padding-top: 5px;
+            transition: 0.3s ease;
+        }
+
+        .icons ion-icon:hover{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <div class="navbar">
+                   <div class="icon">
+                     <h2 class="logo">LeveLsUp</h2>    
+                    </div>
+         
+                       <div class="menu">
+                         <ul>
+                             <li><a href="home.html">HOME</a></li>
+                             <li><a href="about.html">ABOUT</a></li>
+                             <li><a href="services.html">SERVICE</a></li>
+                             <li><a href="gallery.html">GALLERY</a></li>
+                             <li><a href="contact.html">CONTACT</a></li>
+                         </ul>
+                       </div>
+         
+                </div>
+            </div>
+    
+        </div>
+        
+        <div class="row bg-dark">
+            <div class="col-md-3 col-lg-3 col-sm-6">
+                <div class="content">
+                  <h1>Levels <span>Up</span> Inc.</h1>
+                </div>
+            </div>
+        </div>
+       
+        <div class="row">
+            <div class="col-md-3 col-lg-3 col-sm-6">
+                <div class="content">
+                    <p class="par">
+                     Operating six days a week, The Levels Up ensures flexibility and convenience for our clients.<br> 
+                     Appointments can be made through our user-friendly website, social media handles or by phone.<br> 
+                     We prioritize hygiene through regular sanitization practices and follow all health and safety guidelines.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-lg-3 col-sm-6">
+                <div class="content">
+                    <p class="par">
+                     Our competitive edge lies in the expertise of our barbers, the inviting ambiance, and our<br> 
+                     commitment to customer satisfaction. By fostering a sense of community and consistently delivering<br> 
+                     high-quality services, we differentiate ourselves from other local barbershops.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            
+          <div class="col-md-3 col-lg-3 col-sm-6">
+                <div class="cn">
+                <button class="cn"><a href="appointment.html">BOOK NOW</a></button>
+            </div>
+       </div>
+
+       
+         <div class="col-md-12">
+            <footer>
+
+                <div class="col-md-12">
+                    <p class="text-primary">
+                     copywright.levelup<br>
+                     levelup@yahoo.com<br>
+                     follow us
+                    </p>
+                </div>
+
+                <div class="icon">
+                     <a href="https://www.facebook.com/jedediah.jd.90?mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a>
+                     <a href="https://www.instagram.com/jdoskie_jd/"><ion-icon name="logo-instagram"></ion-icon></a>
+                     <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                     <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                </div>
+
+            </footer>
+        </div>
+        
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</body>
+        
+</html>

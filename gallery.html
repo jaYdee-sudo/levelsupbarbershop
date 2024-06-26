@@ -1,0 +1,218 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>http://www.levelsupgallery.com</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container{
+            background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(169.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 350vh;
+        }
+
+        .navbar{
+            width: 1200px;
+            height: 70px;
+            margin: auto;
+        }
+
+        .icon{
+            width: 200px;
+            float: left;
+            height: 70px;
+        }
+
+        .logo{
+            color: blueviolet;
+            font-size: 35px;
+            font-family: Arial;
+            padding-left: 1px;
+            float: left;
+            padding-top: 10px;
+        }
+
+        .menu{
+            width: 900px;
+            float: left;
+            height: 70px;
+        }
+
+        ul{
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul li{
+            list-style: none;
+            margin-left: 62px;
+            margin-top: 27px;
+            font-size: 14px;
+            display: inline-block;
+            position: relative;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-family:Arial ;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+            text-transform: uppercase;
+        }
+
+        ul li a:hover{
+            color:blueviolet;
+        }
+
+body{
+    background: #ecf4fb;
+}
+.img-gallery{
+    width: 100%;
+    margin: 50px auto 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    position: static;
+    align-content: center;
+}
+
+.img-gallery img{
+    width: 55%;
+    cursor: pointer;
+}
+
+.img-gallery img:hover{
+    transition: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(66,77,136,0.2);
+}
+
+.full-img{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.full-img{
+    width: 100%;
+    max-width: 1000px;
+}
+
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3 col-lg-3 col-sm-6 ">
+
+                <div class="navbar">
+
+                    <div class="icon">
+                        <h2 class="logo">LeveLsUp</h2>
+                    </div>
+    
+                    <div class="menu">
+                        <ul>
+                            <li><a href="home.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="services.html">SERVICE</a></li>
+                            <li><a href="gallery.html">GALLERY</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+                  
+            <div class="col-md-12">
+                <div class="full-img" id="fullImgBox">
+                     <img src="images/100.jpg" id="fullImg">
+                     <span onclick="closeFullImg()">X</span>
+                </div>
+                      
+                <div class="img-gallery">
+                     <img src="images/22.jpg" onclick="openFullImg(this.src)">
+                     <img src="images/23.jpg" onclick="openFullImg(this.src)">
+                     <img src="images/24.jpg" onclick="openFullImg(this.src)">
+                     <img src="images/25.jpg" onclick=" openFullImg(this.src)">
+                     <img src="images/26.jpg" onclick="openFullImg(this.src)">
+                     <img src="images/170.jpg" onclick="openFullImg(this.src)">
+                     <img src="images/256.jpg" onclick="openFullImg(this.src)">
+                     <img src="images/100.jpg" onclick="openFullImg(this.src)">
+                </div>
+
+                <script>
+                  
+                    var fullImgBox =document.getElementById("fullImgBox")
+                    var fullImg =document.getElementById("fullImg")
+                  
+                    function openFullImg(pic){
+                      fullImgBox.style.display = "flex";
+                      fullImg.src = pic;
+                    }
+                  
+                    function closeFullImg(){
+                      fullImgBox.style.display = "none";
+                    }
+                  
+                </script>
+    
+            </div>
+                
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-3 col-lg-3 col-sm-6">
+                <footer class="text-white">
+                    <p>
+                     Copyright 2024 coding Class. All Right Reserved.
+                   </p>
+               </footer>
+           </div>
+        </div>        
+    
+               
+    </div>
+</body>
+
+</html>
